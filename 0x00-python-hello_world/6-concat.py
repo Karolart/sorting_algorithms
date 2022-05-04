@@ -2,4 +2,4 @@
 str1 = "Holberton"
 str2 = "School"
 str1 = [str1 , str2]
-print(f"Welcome to ' '.join(str1)")
+print(f'Welcome to'.join(str1))
