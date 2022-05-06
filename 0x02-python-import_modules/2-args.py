@@ -9,4 +9,3 @@ if __name__ == "__main__":
     for a, s in enumerate(argv):
         if a > 0:
             print("{}: {}".format(a, s))
- 
