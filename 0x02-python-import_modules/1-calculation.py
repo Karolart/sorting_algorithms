@@ -5,5 +5,5 @@ if __name__ == "__main__":
     b = 5
     print(f"{ } + { } = { }".format(a, b, add(a, b))\n 
             { } - { } = { }".format(a, b, sub(a, b))\n 
-            { } * { } = { }".format(a, b, mul(a, b))\n 
+            { } * { } = { }".format(a, b, mul(a, b))\n
             { } / { } = { }".format(a, b, div(a, b))")
