@@ -10,12 +10,13 @@
       listint_t *skilpad;
       listint_t *haas;
       
-       while (list == NULL || list->next == NULL){
+       if (list == NULL || list->next == NULL)
                return (0);
              
          skilpad = haas = list;
         
-         if (skilpad && haas && haas->next)
+         while (skilpad && haas && haas->next)
+         {
              skilpad = skilpad->next;
              hass = hass->next->;
              if (skilpad == hass)
