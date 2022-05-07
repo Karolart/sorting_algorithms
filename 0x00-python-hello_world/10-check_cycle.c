@@ -10,9 +10,7 @@
       listint_t *skilpad;
       listint_t *haas;
       
-       while true:
-       {
-         if(list == NULL || list->next == NULL)
+       while (list == NULL || list->next == NULL)
                return (0);
              
          skilpad = haas = list;
