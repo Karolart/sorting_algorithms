@@ -4,7 +4,6 @@
  *:list: pointer will be check
  *return: 1 if is a cycle or 0 if it is not
 */
- 
  int check_cycle(listint_t *list)
  {
       listint_t *skilpad;
@@ -13,9 +12,9 @@
        if (list == NULL || list->next == NULL)
                return (0);
              
-         skilpad = haas = list;
+       skilpad = haas = list;
         
-         while (skilpad && haas && haas->next)
+       while (skilpad && haas && haas->next)
          {
              skilpad = skilpad->next;
              hass = hass->next->;
