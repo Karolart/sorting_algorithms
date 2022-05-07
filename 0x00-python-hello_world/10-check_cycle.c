@@ -2,7 +2,7 @@
 /**
  * check_cycle.c - looking for a cycle in the linked list
  *:list: pointer will be check
- *return: 1 if is a cycle or 0 if it is not 
+ *return: 1 if is a cycle or 0 if it is not
 */
  
  int check_cycle(listint_t *list)
@@ -17,13 +17,11 @@
              
          skilpad = haas = list;
         
-         if (skilpad && haas && haas->next)  
-            
+         if (skilpad && haas && haas->next)
              skilpad = skilpad->next;
-             hass = hass->next->;   
+             hass = hass->next->;
              if (skilpad == hass)
                     return(1);
-           
         }
-        return (0); 
+        return (0);
  }
