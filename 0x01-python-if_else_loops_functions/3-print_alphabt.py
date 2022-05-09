@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for letter in range(ord('a'), ord('z')+1):
-    if letter == 'e' or letter == 'q':
-       continue
-    print("{:c}".format(letter), end="")
+for i in range(97, 123):
+    if chr(i) == 'q' or chr(i) == 'e':
+        continue
+    print("{}".format(chr(i)), end="")
