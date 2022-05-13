@@ -4,7 +4,7 @@
 
 /**
   * free_dlistint - Free a doubly linked list
-  * @head:doubly linked list head 
+  * @head:doubly linked list head
   *
   * Return: Nothing
   */
