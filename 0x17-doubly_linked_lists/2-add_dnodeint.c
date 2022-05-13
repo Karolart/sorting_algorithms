@@ -1,5 +1,6 @@
 #include "lists.h"
 #include "stdio.h"
+#include "lists.h"
 /**
  *size_t dlistint_len(const dlistint_t *h)- Adds a new node 
  * @head:doubly linked list head pointer
