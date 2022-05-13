@@ -1,15 +1,15 @@
-#include "lists.h"
-#include "stdio.h"
+#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- *size_t dlistint_len(const dlistint_t *h)- Adds a new node 
- * @head:doubly linked list head pointer
- * @n: The integer for the new node to contain.
- *
- * Return: null-when the function fail
- *         Otherwise - the address of the new node.
- */
+  * add_dnodeint - Adds a new node at the beginning
+  * of a doubly linked list
+  * @head: The head of the doubly linked list
+  * @n: The number to place in the new node
+  *
+  * Return: The new head of the doubly linked list
+  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node = NULL;
