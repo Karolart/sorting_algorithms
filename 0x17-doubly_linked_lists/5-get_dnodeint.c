@@ -3,10 +3,10 @@
 
 /**
   * get_dnodeint_at_index - Gets a node from a doubly linked list
-  * @head: doubly linked list head
-  * @index: doubly linked list find index
+  * @head: The head of the doubly linked list
+  * @index: The index to find in the doubly linked list
   *
-  * Return: an specific node into the doubly linked list
+  * Return: The specific node of the doubly linked list
   */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
