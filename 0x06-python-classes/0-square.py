@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-"""Square class
-
-just empty for a while
-
-"""
+"""Square class"""
 
 
 class Square:
+    """just empty for a while"""
     pass
