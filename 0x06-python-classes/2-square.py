@@ -2,7 +2,6 @@
 """contains a definition of Square class"""
 
 
-
 class Square:
     """attributes:
            __size(int): Square size side
