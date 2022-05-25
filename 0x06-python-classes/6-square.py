@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""class Square defnition"""
+"""contains a Square class definition"""
 
 
 class Square(object):
-    """class variable size"""
+    """Square class size side"""
     def __init__(self, size=0, position=(0, 0)):
         """initialize size"""
         self.size = size
@@ -11,7 +11,7 @@ class Square(object):
 
     @property
     def size(self):
-        """Property for size"""
+        """size property"""
         return self.__size
 
     @size.setter
