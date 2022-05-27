@@ -19,7 +19,7 @@ What is OOP
 *How to bind attributes to object and classes
 *What is the __dict__ of a class and/or instance of a class and what does it co ntain
 *How does Python find the attributes of an object or class
-*How to use the getattr function "\n"
+*How to use the getattr function 
 
 Tasks
 0. My first square
