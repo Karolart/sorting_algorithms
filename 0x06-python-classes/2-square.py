@@ -11,7 +11,7 @@ class Square:
            size(int) : Square size side
            Returns:
                none
-        """   
+        """
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
