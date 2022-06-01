@@ -1,73 +1,63 @@
-3. this is "Say my name module"
-____________***_______________
+This doctest checks a function that prints My name is <first name> <last name>
+Import module
+>>> say_my_name = __import__('3-say_my_name').say_my_name
 
-Import module:
-____________***_______________
-    >>> say_my_name = __import__('3-say_my_name').say_my_name
+First and Last Name
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+>>> say_my_name("Walter", "White")
+My name is Walter White
 
 
-Function:
-____________***_______________
-Write a function that prints 'My name is <first name> <last name>'.
+Only First Name:
+>>> say_my_name("Bob")
+My name is Bob 
+
+Raise exception if first name is not string
+>>> say_my_name(7, "Smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
 
 
-Section // Non-Parameters
-____________***_______________
 
-*Test_cases
-without parameters
+Raise exception if missing two arguments
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-    >>> say_my_name()
-    Traceback (most recent call last):
-    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-Section // Correct Params
-____________***_______________
-to print a correct name
 
-    >>> say_my_name("John")
-    My name is John 
+Raise exception if second name is not string
+>>> say_my_name("John", 7)
+Traceback (most recent call last):
+TypeError: last_name must be a string
 
-to print a correct name
 
-    >>> say_my_name("John", "Smith")
-    My name is John Smith
+Raise exception if first name and second name are not strings
+>>> say_my_name(7, 7)
+Traceback (most recent call last):
+TypeError: first_name must be a string
 
-with both empty
 
-    >>> say_my_name("", )
-    My name is  
+Empty first string
+>>> say_my_name("", "Smith")
+My name is  Smith
 
-with both empty 
 
-    >>> say_my_name('\n', '\n')
-    My name is 
-    <BLANKLINE>
-    <BLANKLINE>
+Empty second string
+>>> say_my_name("John", "")
+My name is John 
 
-case with many spaces 
 
-    >>> say_my_name(" ", "Santiago")
-    My name is   Santiago
-with only spaces 
+Empty first and second string
+>>> say_my_name("", "")
+My name is  
 
-    >>> say_my_name(" ", " ")
-    My name is    
+Empty first and second string
+>>> say_my_name("")
+My name is  
 
-____________***_______________
-with the first name as integer
-
-    >>> say_my_name(12, "White")
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
-
-with the last name as integer
-
-    >>> say_my_name("White", 12)
-    Traceback (most recent call last):
-    TypeError: last_name must be a string
-with both names as integer
-
-    >>> say_my_name(12, 12)
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
+Multiple leading and trailing spaces
+>>> say_my_name(" ? ",)
+My name is  ?  
