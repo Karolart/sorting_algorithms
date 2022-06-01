@@ -13,10 +13,12 @@ properly, the following aspects must be taken into account:
 
 
 def matrix_divided(matrix, div):
-    """This function takes the data entered by the user and checks that there are 
-    only integer and float numbers in the array.
-    The result is then taken to an array with parameters 
-    similar to those of the previous structure.
+    """Divides all elements of a matrix.
+    
+    This function takes the data entered by the user and checks 
+    that there are only integer and float numbers in the array.
+    The result is then taken to an array with parameters similar
+    to those of the previous structure.
     Args:
         matrix (:obj:`list` of :obj:`list`): The matrix to be divided.
         div (int): The divisor number.
@@ -26,6 +28,7 @@ def matrix_divided(matrix, div):
         TypeError: If `matrix` list of lists of integers or floats or
             if `div` is not a number.
         ZeroDivisionError: If `div` is equal to `0`.
+        
     """
 
     check_for_list(matrix)
@@ -127,4 +130,4 @@ def raises_matrix_type_error():
     """
 
     raise TypeError('matrix must be a matrix \
-(list of lists) of integers/floats') return [[round(i / div, 2) for i in l] for l in matrix]
+(list of lists) of integers/floats')
