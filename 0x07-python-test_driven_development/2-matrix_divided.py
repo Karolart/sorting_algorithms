@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+This is the "2-matrix_divided" module.
+The 2-matrix_divided module supplies one function, matrix_divided(matrix, div).
+"""
+
+
 def matrix_divided(matrix, div):
     """This function takes the data entered by the user and checks that there are only integer and float numbers in the array.
        The result is then taken to an array with parameters similar to those of the previous structure.
