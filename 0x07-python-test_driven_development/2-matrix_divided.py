@@ -1,21 +1,17 @@
 #!/usr/bin/python3
 """A module to divides all elements of a matrix.
+
 This module is in charge of dividing all the values of a matrix
 according to a divisor given by the user. For the program to work
-properly, the following aspects must be taken into account:
-    * The matrix must  must be a list of lists of integers or floats.
-    * Each row of the matrix must be of the same size.
-    * The divisor must be a number (integer or float) other than 0.
-    * The division of all elements of the matrix is rounded off
-    to 2 decimal places.
-    * The result is delivered in a new matrix.
+* The result is delivered in a new matrix.
+
 """
 
 
 def matrix_divided(matrix, div):
     """Divides all elements of a matrix.
     
-    This function takes the data entered by the user and checks 
+    This function takes the data entered by the user and checks
     that there are only integer and float numbers in the array.
     The result is then taken to an array with parameters similar
     to those of the previous structure.
@@ -28,7 +24,7 @@ def matrix_divided(matrix, div):
         TypeError: If `matrix` list of lists of integers or floats or
             if `div` is not a number.
         ZeroDivisionError: If `div` is equal to `0`.
-        
+  
     """
 
     check_for_list(matrix)
@@ -57,11 +53,13 @@ def matrix_divided(matrix, div):
 
 def check_for_list(value):
     """
+
     Check if the value is of type list
     Args:
         value (any): The value to verify.
     Raises:
         TypeError: If `value` isn't a list.
+
     """
 
     if type(value) is not list or len(value) == 0:
@@ -70,12 +68,14 @@ def check_for_list(value):
 
 def check_for_divisor(div):
     """
+
     Check if the divisor is integer, float or zero
     Args:
         div (any): The divisor to verify.
     Raises:
         TypeError: If `value` isn't integer or float.
         ZeroDivisionError: If `div` is equal to `0`.
+ 
     """
 
     if check_for_number(div) is False:
@@ -86,11 +86,14 @@ def check_for_divisor(div):
 
 
 def check_for_number(value):
-    """Check if the value is integer or float
+    """
+    
+    Check if the value is integer or float
     Args:
         value (any): The value to verify.
     Returns:
-        bool: True if successful, False otherwise.
+        bool: True if successful, False otherwise
+        
     """
 
     if type(value) is not int and type(value) is not float:
