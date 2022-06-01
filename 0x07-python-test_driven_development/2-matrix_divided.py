@@ -1,5 +1,25 @@
 #!/usr/bin/python3
 def matrix_divided(matrix, div):
+    """Divides all elements of a matrix.
+    This function takes the data sent by the user to verify
+    that the matrix contains lists within it and that each
+    list contains integer or floating type numbers.
+    The result of the splitting operation is then added to a
+    new list in a new matrix with the same matrix structure
+    given by the user.
+    In case the format of the matrix is incorrect
+    or the divisor is not a number, this function
+    will raise an error.
+    Args:
+        matrix (:obj:`list` of :obj:`list`): The matrix to be divided.
+        div (int): The divisor number.
+    Returns:
+        list: A new matrix with all elements divided.
+    Raises:
+        TypeError: If `matrix` list of lists of integers or floats or
+            if `div` is not a number.
+        ZeroDivisionError: If `div` is equal to `0`.
+    """
     errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix:
         raise TypeError(errorMessage)
