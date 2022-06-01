@@ -9,14 +9,22 @@ properly, the following aspects must be taken into account:
     * The division of all elements of the matrix is rounded off
     to 2 decimal places.
     * The result is delivered in a new matrix.
+    
 """
 
 
 def matrix_divided(matrix, div):
-    """This function takes the data entered by the user and checks that there are only integer and float numbers in the array. 
-       The result is then taken to an array with parameters similar to those of the previous structure."""
-    errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
-    if not matrix:
+    """Divides all elements of a matrix.
+    
+    This function takes the data entered by the user and 
+    checks that there are only integer and float numbers in the array. 
+    The result is then taken to an array with parameters similar to those of the previous structure.
+    
+    """
+   
+   errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
+    if not matrix:Divides all elements of a matrix.
+         
         raise TypeError(errorMessage)
     if not isinstance(matrix, list):
         raise TypeError(errorMessage)
