@@ -1,16 +1,5 @@
 #!/usr/bin/python3
 """A module to divides all elements of a matrix.
-
-This module is in charge of dividing all the values of a matrix
-according to a divisor given by the user. For the program to work
-properly, the following aspects must be taken into account:
-    * The matrix must  must be a list of lists of integers or floats.
-    * Each row of the matrix must be of the same size.
-    * The divisor must be a number (integer or float) other than 0.
-    * The division of all elements of the matrix is rounded off
-    to 2 decimal places.
-    * The result is delivered in a new matrix.
-
 """
 
 
