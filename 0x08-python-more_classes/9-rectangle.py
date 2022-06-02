@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""module for defines a rectangle class"""
+"""
+module for defines a rectangle class
+"""
 
 
 class Rectangle:
@@ -74,7 +76,7 @@ class Rectangle:
         return 'Rectangle({:d}, {:d})'.format(self.width, self.height)
 
     def __del__(self):
-        """ Instance method called when an instance is delete  """
+        """ Instance method called when an instance is delete """
         Rectangle.number_of_instances -= 1
         print('Bye rectangle...')
 
@@ -94,4 +96,3 @@ class Rectangle:
     def square(cls, size=0):
         """ returns a new Rectangle instance """
         return cls(size, size)
-
