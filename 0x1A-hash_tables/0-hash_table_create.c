@@ -24,5 +24,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(htable);
 		return (NULL);
 	}
-	return (table);
+	return (htable);
 }
