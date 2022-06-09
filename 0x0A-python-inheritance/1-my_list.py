@@ -6,9 +6,7 @@ contains  MyList class
 
 class MyList(list):
     """subclass list"""
-    def __init__(self):
-        """constructor"""
-        super().__init__()
+      pass
 
     def print_sorted(self):
         """print  the sorted list"""
