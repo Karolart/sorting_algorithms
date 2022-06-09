@@ -5,11 +5,10 @@ the module contains MyList class
 
 
 class MyList(List):
-    """subclass list"""
-    def __init__(self):
-        """constructor"""
-        super().__init__()
+    """
+    subclass list
+    """
 
-    def print_sorted(self):
-        """prints the list sorted"""
-        print(sorted(self))
+
+    if issubclass(MyList, list):
+            print(sorted(self))
