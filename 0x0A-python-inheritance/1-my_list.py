@@ -1,12 +1,19 @@
 #!/usr/bin/python3
-"A module contains MyList class"
+"""
+A module to prints a list in ascending order
+"""
 
 
 class MyList(list):
-    """MyList class
-    Attributes:
-    attr1(print_sorted): prints sorted list
     """
+    A class contains MyList class
+    """
+
     def print_sorted(self):
-        """Prints instance"""
-        print(sorted(self))
+        """
+        Prints a list in ascending order
+        Sort a list and then prints on the output
+        """
+
+        if issubclass(MyList, list):
+            print(sorted(self))
