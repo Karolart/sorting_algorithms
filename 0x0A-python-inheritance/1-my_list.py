@@ -6,10 +6,9 @@ this module contains MyList class
 
 class MyList(list):
     """subclass list"""
-    def __init__(self):
-        """constructor"""
-        super().__init__()
+      pass
 
-    def print_sorted(self):
-        """prints the list sorted"""
-        print(sorted(self))
+      def print_sorted(self):
+        """prints the  sorted list"""
+
+      print(sorted(list(self)))
