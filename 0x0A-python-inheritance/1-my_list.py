@@ -4,7 +4,7 @@ this module contains MyList class
 """
 
 
-class MyList(List):
+class MyList(list):
     """subclass list"""
     def __init__(self):
         """constructor"""
