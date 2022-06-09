@@ -4,11 +4,9 @@ the module contains MyList class
 """
 
 
-class MyList(List):
-    """
-    subclass list
-    """
+class MyList(list):
+    """Implements sorted printing for the built-in list class."""
 
-
-    if issubclass(MyList, list):
-            print(sorted(self))
+    def print_sorted(self):
+        """Print a list in sorted ascending order."""
+        print(sorted(self))
