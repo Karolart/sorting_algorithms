@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-"""
-A module to prints a list in ascending order
-"""
+"A module contains MyList class"
 
 
 class MyList(list):
+    """MyList class
+    Attributes:
+    attr1(print_sorted): prints sorted list
     """
-   initialize class
-    """
-
     def print_sorted(self):
-        """
-        prints a sorted list 
-        """
-
-            print(sorted(self))
+        """Prints instance"""
+        print(sorted(self))
