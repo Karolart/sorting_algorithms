@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 """
-contains  MyList class
+A module to prints a list in ascending order
 """
 
 
 class MyList(list):
-    """subclass list"""
-      pass
+    """
+   initialize class
+    """
 
     def print_sorted(self):
-        """print  the sorted list"""
-       
+        """
+        prints a sorted list 
+        """
+
         if issubclass(MyList, list):
             print(sorted(self))
