@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this module contains MyList class
+the module contains MyList class
 """
 
 
