@@ -1,14 +1,16 @@
+
 #!/usr/bin/python3
 """
-this module contains MyList class
+contains  MyList class
 """
 
 
 class MyList(list):
     """subclass list"""
-      pass
+    def __init__(self):
+        """constructor"""
+        super().__init__()
 
-      def print_sorted(self):
-        """prints the  sorted list"""
-
-      print(sorted(list(self)))
+    def print_sorted(self):
+        """print  the sorted list"""
+        print(sorted(self))
