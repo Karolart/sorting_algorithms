@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this module cointains an inherits_from(obj, a_class) function ,it checks if theobject is an instance of a class
+this module cointains an inherits_from function ,it checks if theobject is an instance of a class
 ""
 
 
