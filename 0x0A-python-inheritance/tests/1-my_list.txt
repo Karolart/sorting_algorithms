@@ -1,10 +1,6 @@
-1-my_list.txt using 
-___________________________________________________________________
-
-contains just an only one function: (print_sorted) it  shows in the screen the sorted list
- ''print_sorted()''.
-
-values
+This doctest checks a script that creates a Mylist class.
+Import the module
+>>> MyList = __import__('1-my_list').MyList
 ___________________________________________________
 ''print_sorted()'' returns the list sorted.
   positives integers
