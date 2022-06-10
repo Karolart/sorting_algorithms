@@ -32,3 +32,4 @@ class Student:
                 setattr(self, key, json[key])
             except:
                 pass
+   
